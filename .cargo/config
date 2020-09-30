@@ -1,0 +1,20 @@
+[target.armv7a-none-eabi]
+linker = "C:/Apps/Xilinx_Vivado2017/SDK/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc"
+rustflags = [
+   "-C", "link-arg=-mcpu=cortex-a9",
+   "-C", "link-arg=-mfpu=vfpv3",
+   # Hard float ABI is not supported by rustup yet, thus we use soft float ABI
+   "-C", "link-arg=-mfloat-abi=soft",
+   "-C", "link-arg=-Wl,-build-id=none",
+   "-C", "link-arg=-specs=pynq/Xilinx.spec",
+   "-C", "link-arg=-Wl,-T",
+   # linker-script
+   "-C", "link-arg=-Wl,pynq/lscript.ld",
+   # Link required static libraries
+   "-C", "link-arg=-lc",
+   "-C", "link-arg=-lgcc",
+   "-C", "link-arg=-lxil_sf",
+]
+
+[build]
+target = "armv7a-none-eabi" # Cortex-A9 (soft-float ABI)
