@@ -1,6 +1,6 @@
 # Alien shooter, Rust version
 
-This branch has been edited to run on TC219 machines in particular. See `standalone` branch for a version that runs on an unknown system configuration.
+This branch has been edited to run on an undetermined machine configuration. See `master` branch for a version that runs at TC219.
 
 ## Setup
 
@@ -14,8 +14,9 @@ This branch has been edited to run on TC219 machines in particular. See `standal
 4. Make sure you have Xilinx SDK installed. More information about installing Xilinx SDK at https://github.com/hegza/comp.ce.100-rust-exercise-guide.
 
 ## Build and run
-- Build the binary with predefined location for Xilinx SDK (TC219):
-    - `XILINX_SDK="C:/Apps/Xilinx_Vivado2017/SDK/2017.2" cargo build` on Linux-like terminals like Git Bash and WSL. On PowerShell, use first `$Env:XILINX_SDK = "C:/Apps/Xilinx_Vivado2017/SDK/2017.2"` then `cargo build`.
+- Build the binary:
+    - `cargo build`.
+    - You may have to first specify the location of Xilinx SDK with `export XILINX_SDK=/location/of/Xilinx/SDK/20xx.x` or `$Env:XILINX_SDK = "C:/Apps/Xilinx_Vivado2017/SDK/2017.2`.
     - The first build will take a while, since it has to download all dependencies.
     - Consecutive builds from the same terminal can just use `cargo build` without re-setting the environment variable as the Xilinx dependent dependency is cached.
 - Run the binary on a connected PYNQ-Z1:
