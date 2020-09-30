@@ -43,5 +43,8 @@ This branch has been edited to run on TC219 machines in particular. See `standal
     * The libxil FFI dependency cannot locate the Xilinx toolchain automatically. Make sure that Xilinx SDK is installed and set its path using `export XILINX_SDK=/path/to/Xilinx/SDK/version`.
 - `cargo build` fails with "error: linker `arm-none-eabi-gcc` not found".
     * The appropriate linker is not found. Use .cargo/config to point cargo to a functioning linker using the key "linker = /location/linker-executable".
+- `cargo build` fails with "error: linker `C:/.../arm-none-eabi-gcc` not found".
+    * The GCC linker used for this work is not available at its pre-configured location at .cargo/config.
 - `source run_on_pynq.tcl` returns "no targets found with ...".
     * Make sure the PYNQ-Z1 is turned on and connected.
+
