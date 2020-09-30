@@ -1,5 +1,7 @@
 # Alien shooter, Rust version
 
+This branch has been edited to run on TC219 machines in particular. See `standalone` branch for a version that runs on an unknown system configuration.
+
 ## Setup
 
 1. Install Rust:
