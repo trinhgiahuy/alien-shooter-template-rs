@@ -5,7 +5,7 @@
 // is in many ways similar to the C++ `std`.
 #![no_std]
 // Open feature gates to some particular extras related to low-level hacking that are not part of
-// the core Rust language: assembler, language keyword overwriting and
+// the core Rust language: assembler, language keyword overwriting and program entry point.
 #![feature(asm, lang_items, start)]
 
 mod interrupt;
