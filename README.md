@@ -11,6 +11,7 @@ This branch has been edited to run on TC219 machines in particular. See `standal
     - We need the nightly toolchain to compile a line of assembly to enable interrupts via a `libxil` C-FFI library.
 3. Install the cross-compiler:
     - `rustup target add armv7a-none-eabi`.
+4. Make sure you have Xilinx SDK installed. More information about installing Xilinx SDk at https://github.com/hegza/comp.ce.100-rust-exercise-guide.
 
 ## Build and run
 - Build the binary with predefined location for Xilinx SDK (TC219):
