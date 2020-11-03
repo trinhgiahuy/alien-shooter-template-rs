@@ -76,7 +76,7 @@ static mut INTC: xil::XScuGic = xil::XScuGic {
     UnhandledInterrupts: 0,
 };
 
-/// Initialize the board interrupts specific to this projec
+/// Initialize the board interrupts specific to this project
 pub fn init() {
     setup_gpio_interrupt_system();
     setup_timer_int();
