@@ -17,6 +17,7 @@ This branch has been edited to run on an undetermined machine configuration. See
 - Build the binary:
     - `cargo build`.
     - You may have to first specify the location of Xilinx SDK with `export XILINX_SDK=/location/of/Xilinx/SDK/20xx.x` or `$Env:XILINX_SDK = "C:/Apps/Xilinx_Vivado2017/SDK/2017.2`.
+    - If you get a message like "'arm-none-eabi-gcc' not found", you will have to specify the location of the linker at ".cargo/config" in place of "arm-none-eabi-gcc". You could use the Xilinx' linker, found at "C:/Apps/Xilinx_Vivado2017/SDK/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc" on TC219 machines.
     - The first build will take a while, since it has to download all dependencies.
     - Consecutive builds from the same terminal can just use `cargo build` without re-setting the environment variable as the Xilinx dependent dependency is cached.
 - Run the binary on a connected PYNQ-Z1:
