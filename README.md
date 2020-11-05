@@ -19,7 +19,7 @@ This branch has been edited to run on TC219 machines in particular. See `standal
     - The first build will take a while, since it has to download all deependencies.
     - Consecutive builds from the same terminal can just use `cargo build` without re-setting the environment variable as the Xilinx dependent dependency is cached.
 - Run the binary on a connected PYNQ-Z1:
-    - Open a Xilinx Command Line Tools -prompt and connect the PYNQ.
+    - Open a "Xilinx Software Command Line Tool 2017.2" -prompt and connect the PYNQ.
     - Navigate to the project directory.
     - Run `source run_on_pynq.tcl` to initialize and run the built program on a connected PYNQ.
     - Alternatively on Windows, double-click on the `run_on_pynq.tcl` script. If Windows asks for a program to run the script with, find "Xilinx Command Line Tools".
