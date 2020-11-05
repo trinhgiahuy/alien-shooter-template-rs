@@ -16,6 +16,7 @@ This branch has been edited to run on TC219 machines in particular. See `standal
 ## Build and run
 - Build the binary with predefined location for Xilinx SDK (TC219):
     - `XILINX_SDK="C:/Apps/Xilinx_Vivado2017/SDK/2017.2" cargo build`.
+    - The first build will take a while, since it has to download all deependencies.
     - Consecutive builds from the same terminal can just use `cargo build` without re-setting the environment variable as the Xilinx dependent dependency is cached.
 - Run the binary on a connected PYNQ-Z1:
     - Open a Xilinx Command Line Tools -prompt and connect the PYNQ.
