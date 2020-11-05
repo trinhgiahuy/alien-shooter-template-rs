@@ -53,6 +53,7 @@ This branch has been edited to run on TC219 machines in particular. See `standal
     * If the build system cannot find the linker, use .cargo/config to point cargo to a functioning linker using the key "linker = /location/of/linker-executable". Xilinx ships with a functioning cross-linker, so if you can find the directory where the SDK is installed, the Windows path to the linker will be `"</location/of/Xilinx>/SDK/<version>/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc"`. On linux, "nt" will be "lin" instead.
 - `cargo build` fails with "error: linker `C:/.../arm-none-eabi-gcc` not found".
     * The GCC linker used for this work is not available at its pre-configured location at .cargo/config.
+    * See above for a potential solution.
 - `source run_on_pynq.tcl` returns "no targets found with ...".
     * Make sure the PYNQ-Z1 is turned on and connected.
 
