@@ -16,14 +16,14 @@ This branch has been edited to run on TC219 machines in particular. See `standal
 ## Build and run
 - Build the binary with predefined location for Xilinx SDK (TC219):
     - `XILINX_SDK="C:/Apps/Xilinx_Vivado2017/SDK/2017.2" cargo build`.
-    - The first build will take a while, since it has to download all deependencies.
+    - The first build will take a while, since it has to download all dependencies.
     - Consecutive builds from the same terminal can just use `cargo build` without re-setting the environment variable as the Xilinx dependent dependency is cached.
 - Run the binary on a connected PYNQ-Z1:
     - Open a "Xilinx Software Command Line Tool 2017.2" -prompt and connect the PYNQ.
     - Navigate to the project directory.
     - Run `source run_on_pynq.tcl` to initialize and run the built program on a connected PYNQ.
     - Alternatively on Windows, double-click on the `run_on_pynq.tcl` script. If Windows asks for a program to run the script with, find "Xilinx Software Command Line Tools 2017.2".
-    - See (Open an input-output interface to the board)[https://github.com/hegza/comp.ce.100-rust-exercise-guide/blob/master/src/3_launch.md#open-an-input-output-interface-to-the-board] for how to see the output using PuTTY. The program needs to be re-run to get the output to show on the terminal.
+    - See [Open an input-output interface to the board](https://github.com/hegza/comp.ce.100-rust-exercise-guide/blob/master/src/3_launch.md#open-an-input-output-interface-to-the-board) for how to see the output using PuTTY. The program needs to be re-run to get the output to show on the terminal.
 
 ## Directory structure and files
 
