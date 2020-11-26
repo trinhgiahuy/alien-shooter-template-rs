@@ -6,12 +6,9 @@ This branch has been edited to run on an undetermined machine configuration. See
 
 1. Install Rust:
     - Go to [rustup.rs](https://rustup.rs/) and follow the instructions.
-2. Install the nightly toolchain:
-    - ```rustup install nightly```.
-    - We need the nightly toolchain to compile a line of assembly to enable interrupts via a `libxil` C-FFI library.
-3. Install the cross-compiler:
+2. Install the cross-compiler:
     - `rustup target add armv7a-none-eabi`.
-4. Make sure you have Xilinx SDK installed. More information about installing Xilinx SDK at https://github.com/hegza/comp.ce.100-rust-exercise-guide.
+3. Make sure you have Xilinx SDK installed. More information about installing Xilinx SDK at https://github.com/hegza/comp.ce.100-rust-exercise-guide.
 
 ## Build and run
 - Build the binary:
