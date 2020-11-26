@@ -22,7 +22,7 @@ This branch has been edited to run on an undetermined machine configuration. See
     - Navigate to the project directory.
     - Run `source run_on_pynq.tcl` to initialize and run the built program on a connected PYNQ.
     - Alternatively on Windows, double-click on the `run_on_pynq.tcl` script. If Windows asks for a program to run the script with, find "Xilinx Software Command Line Tools 2017.2".
-    - See [Open an input-output interface to the board](https://github.com/hegza/comp.ce.100-rust-exercise-guide/blob/master/src/3_launch.md#open-an-input-output-interface-to-the-board) for how to see the output using PuTTY. The program needs to be re-run to get the output to show on the terminal.
+    - See "Open an input-output interface to the board" at [the online exercise guide](https://github.com/hegza/comp.ce.100-rust-exercise-guide/blob/master/src/2_build-and-run.md) for how to see the output using PuTTY. The program needs to be re-run to get the output to show on the terminal.
 
 ## Directory structure and files
 
