@@ -49,7 +49,7 @@ This branch has been edited to run on an undetermined machine configuration. See
 - `cargo build` fails with "error: linker `arm-none-eabi-gcc` not found".
     * The appropriate linker is not found.
     * arm-none-eabi-gcc can be installed on debian (like Ubuntu) using apt/dpkg using `apt-get install gcc-arm-none-eabi`.
-    * If the build system cannot find the linker, use .cargo/config to point cargo to a functioning linker using the key "linker = /location/of/linker-executable". Xilinx ships with a functioning cross-linker, so if you can find the directory where the SDK is installed, the Windows path to the linker will be `"</location/of/Xilinx>/SDK/<version>/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe"`. On linux, "nt" will be "lin" instead.
+    * If the build system cannot find the linker, use .cargo/config to point cargo to a functioning linker using the key "linker = /location/of/linker-executable". Xilinx ships with a functioning cross-linker, so if you can find the directory where the SDK is installed, the Windows path to the linker will be `"</location/of/Xilinx>/SDK/<version>/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe"`. On linux, "nt" will be "lin" instead and the executable will not have the ".exe" file extension.
 - `cargo build` fails with "error: linker `C:/.../arm-none-eabi-gcc` not found".
     * The GCC linker used for this work is not available at its pre-configured location at .cargo/config.
     * See above for a potential solution.
