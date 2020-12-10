@@ -1,5 +1,7 @@
 use crate::xil;
 use crate::LED_ADDRESS;
+// Use the print macros that are exported into crate root
+use crate::{print64, print};
 
 const PAGE_SIZE: usize = 10;
 
