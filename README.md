@@ -1,5 +1,7 @@
 # Alien shooter, Rust version
 
+[Exercise Guild](git@github.com:trinhgiahuy/alien-shooter-template-rs.git)
+
 This branch has been edited to run on TC219 machines in particular. See `standalone` branch for a version that runs on an unknown system configuration.
 
 ## Setup
